@@ -11,6 +11,10 @@ spring:
       chat:
         options:
           model: qwen-plus
+    mcp:
+      client:
+        stdio:
+          servers-configuration: classpath:mcp.json
   # 数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -55,4 +59,3 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.liagent.aiagent.controller
-
